@@ -1,0 +1,7 @@
+== EchoBox ==
+
+EchoBox is a quick & easy way to broadcast & centrally control audio distribution.
+
+== Setup ==
+
+Run nw.exe in the root directory of the project.  Click the "start a server" link to start your server.  Drag an MP3 file to the right side of the application to load it into the system, then hit the first button (with the upload icon) to push it to all your clients.  The play & pause buttons will start & stop the audio on all the clients.7
