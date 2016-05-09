@@ -1,0 +1,83 @@
+body {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+}
+
+.row {
+  margin: 1rem 2rem;
+}
+
+.column {
+  margin: 0rem 1rem;
+}
+
+#logo {
+    width: 256px;
+    height: 256px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#statusLine {
+  border: thin solid #000;
+  background-color: #282828;
+  margin-bottom: 1rem;;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+#messageCenter {
+  #messageBox {
+    margin: 0.5rem 2rem;
+    padding: 3px;
+  }
+  button {
+    margin: 0.5rem auto;
+  }
+}
+
+.dropLabel {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+#fileDropTarget{
+  button {
+    display: inline;
+    margin: 0 1rem;
+    font-size: 3rem;
+  }
+
+  .row {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+}
+
+#clientListBox {
+  margin: 0.5rem;
+  border: thin solid #222;
+}
+
+.client {
+  background-color: #333;
+  border: thin solid #111;
+}
+
+#recorderBox {
+  display: none;
+  button {
+    display: inline;
+    margin: 0 1rem;
+    font-size: 3rem;
+  }
+
+  .row {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+}

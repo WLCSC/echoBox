@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EchoBox</title>
+    <script src="js/faye-node.js" type="application/javascript"></script>
+    <script src="js/faye-browser-min.js" type="application/javascript"></script>
+    <script src="js/jquery.min.js" type="application/javascript"></script>
+    <script src="js/microm.js" type="application/javascript"></script>
+    <script src="js/client.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="css/corpus.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <audio id="player"></audio>
+    <div class="row">
+      <div class="column">
+        <img src="img/logo-off.png" id="logo"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" id="statusLine">
+        Enter room information below.
+      </div>
+    </div>
+
+    <div class="row" id="joinForm">
+      <div class="column h100 m3 center">
+        <div class="input-wrap">
+          <label class="label" for="server">Room Server to Join</label>
+          <input class="input" type="text" name="server" id="server" placeholder="Server Name/IP Address">
+        </div>
+        <div class="input-wrap">
+          <label class="label" for="name">Your Name</label>
+          <input class="input" type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="input-wrap">
+          <button class="h100 center" id="join">Join Room</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="recorderBox">
+      <button onClick="recorderButton()" id="recordControl"><i class="fa fa-circle"></i></button>
+      <button onClick="recordSave()"><i class="fa fa-save"></i></button>
+    </div>
+  </body>
+</html>

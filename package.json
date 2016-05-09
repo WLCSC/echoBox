@@ -1,0 +1,12 @@
+{
+  "name": "EchoBox",
+  "main": "index.html",
+  "description": "audio streaming & recording",
+  "version": "1.0.0",
+  "window": {
+    "title": "EchoBox",
+    "width": 1024,
+    "height": 768,
+    "toolbar": true
+  }
+}

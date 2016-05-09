@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EchoBox</title>
+    <script src="js/faye-node.js" type="application/javascript"></script>
+    <script src="js/faye-browser-min.js" type="application/javascript"></script>
+    <script src="js/jquery.min.js" type="application/javascript"></script>
+    <!-- <script src="node_modules/microm/dist/microm.min.js" type="application/javascript"></script> -->
+    <script src="js/server.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="css/corpus.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <script type="application/javascript">
+      $(function() {startServer();});
+    </script>
+    <audio id="player"></audio>
+    <div class="row">
+      <div class="column">
+        <img src="img/logo-off.png" id="logo"/>
+      </div>
+      <div class="column">
+        <div id="statusLine">
+          Starting Faye Server...
+        </div>
+        <div class="center" id="messageCenter">
+          <!--<input id="messageBox" type="text"></input>
+          <button onclick="pushMessage()">Push Message</button>-->
+        </div>
+        <div id="fileDropTarget">
+          <div class="row center">
+            <button onClick="pushUpload()" title="Push File/Skip"><i class="fa fa-fw fa-upload"></i></button>
+            <button onClick="pushPlay()" title="Play"><i class="fa fa-fw fa-play-circle"></i></button>
+            <button onClick="pushPause()" title="Pause"><i class="fa fa-fw fa-pause-circle"></i></button>
+          </div>
+          <div class="row center">
+            <p class="dropLabel">Drag &amp; Drop MP3 File Here</p>
+          </div>
+          <div class="row center">
+            <div class="column">
+              <p><b>Now Playing:</b> <span id="nowPlaying">nothing</span></p>
+              <p><input type="range" min="0" max="0" value="0" id="fader" /> <span style="font-family: monospace;"><span id="time-progress">00:00</span> / <span id="time-total">00:00</span></span></p>
+            </div>
+          </div>
+          <!--<div class="row center">
+            <button onClick="pushEnable()"><i class="fa fa-fw fa-microphone"></i></button>
+            <button onClick="pushDisable()"><i class="fa fa-fw fa-microphone-slash"></i></button>
+          </div>-->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="controlsLine">
+
+
+    </div>
+
+    <div class="row" id="clientListBox">
+    </div>
+
+
+  </body>
+</html>
